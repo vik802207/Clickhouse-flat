@@ -10,7 +10,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/api/auth/register", user);
+      await axios.post("https://clickhouse-flat.onrender.com/api/auth/register", user);
       navigate("/login");
     } catch (err) {
       alert("Registration failed!");
