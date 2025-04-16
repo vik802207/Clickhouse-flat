@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# 📦📄 ClickHouse-CSV Ingestion Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Bidirectional Data Ingestion Tool for seamless transfer between **ClickHouse** and **Flat Files (CSV)**.  
+Manage your data workflows with JWT-secured APIs, beautiful UI, and easy import/export capabilities.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🔁 **Bidirectional Ingestion**: Export data from ClickHouse to CSV and import CSV to ClickHouse.
+- 🔐 **JWT Authentication**: Secure access with login/register functionality.
+- 🧾 **Dynamic Query Support**: Run custom ClickHouse queries via the frontend.
+- 🎨 **Modern UI**: React-based frontend with clean, fancy dashboard styles.
+- ⚙️ **Node.js + Express Backend**: Fast, lightweight, and easily extendable.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🏗️ Tech Stack
 
-### `npm test`
+- **Frontend**: React, Tailwind CSS or styled-components
+- **Backend**: Node.js, Express, JWT Auth
+- **Database**: ClickHouse Cloud
+- **Others**: Mongoose (for optional user DB), bcryptjs (for password hashing)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+clickhouse-csv-ingestion/
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── middleware/
+│   └── ingestionFunctions.js
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.js
+├── .env
+└── README.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Project Setup Instructions
 
-### `npm run eject`
+# Clone the repository
+git clone https://github.com/vik802207/Clickhouse-flat
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔧 Backend Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Navigate to the backend directory
+cd backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Start the backend server
+node index.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### 💻 Frontend Setup
 
-## Learn More
+# Navigate to the frontend directory
+cd Bidirectional ClickHouse
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Install dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Start the frontend server
+npm start
 
-### Code Splitting
+## 📤 API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Method | Endpoint             | Description                     |
+| ------ | -------------------- | ------------------------------- |
+| POST   | `/clickhouse-to-csv` | Export ClickHouse data to CSV   |
+| POST   | `/csv-to-clickhouse` | Import CSV data into ClickHouse |
+| POST   | `/register`          | Register a new MCP user         |
+| POST   | `/login`             | Login MCP and get JWT           |
 
-### Analyzing the Bundle Size
+## 📌 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **File Upload Interface**: Implement an easy-to-use file upload feature for importing CSVs directly through the UI.
+- **Query Validator with syntax hints**: Add a query validation tool that checks for syntax errors in real-time and offers helpful hints.
+- **Download CSV directly from browser**: Enable direct CSV download functionality from the UI after exporting data from ClickHouse.
+- **Admin dashboard with table stats**: Build a dedicated admin dashboard displaying relevant table statistics, including row counts, data types, and column information.
+## 🚀 Live Demo
 
-### Making a Progressive Web App
+Check out the live demo of **ClickPorter** - ClickHouse ↔️ CSV Connector:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-brightgreen)](https://clickhouse-flat.vercel.app/)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> **Note**: This is a prototype demo. Features like login and file upload may be limited or disabled in the demo version. Feel free to explore the core functionalities and user interface.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Demo Features:
+- **Export ClickHouse Data to CSV**: Try exporting data from ClickHouse to CSV.
+- **Import CSV to ClickHouse**: Import your CSV files into ClickHouse seamlessly.
+- **Dynamic Queries**: Run custom ClickHouse queries directly from the UI.
+- **MCP Login**: Register and log in as an MCP (Micro Collection Partner) user.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to explore the demo to get a firsthand look at how the tool works.
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📞 Contact
+
+For any questions or feedback, feel free to reach out:
+
+- **Name**: Vikash Gupta
+- **Email**: vikashg802207@gmail.com
+- **GitHub**: https://github.com/vik802207
+
+
