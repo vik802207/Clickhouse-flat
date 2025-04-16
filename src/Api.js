@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:8000/api'; // Replace with your backend URL
+const apiUrl = 'https://clickhouse-flat.onrender.com'; // Replace with your backend URL
 
 // Function to export data from ClickHouse to CSV
 export const exportClickHouseToCSV = async (query, fileName) => {
