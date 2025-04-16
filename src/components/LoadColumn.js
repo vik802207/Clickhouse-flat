@@ -26,7 +26,7 @@ function LoadColumn() {
     setStatus('');
 
     try {
-      const response = await axios.post('http://localhost:8000/api/load-columns', {
+      const response = await axios.post('https://clickhouse-flat.onrender.com/api/load-columns', {
         query,
         tableName,
       });
