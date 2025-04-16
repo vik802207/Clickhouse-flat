@@ -1,0 +1,84 @@
+.mcp-register-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .mcp-register-card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+    color: #fff;
+    animation: slideUp 0.8s ease forwards;
+  }
+  
+  .mcp-register-card h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .subtext {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+  }
+  
+  .mcp-register-card input,
+  .mcp-register-card select {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    font-size: 15px;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .mcp-register-card input:focus,
+  .mcp-register-card select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.8);
+  }
+  
+  .mcp-register-card button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #00c6ff;
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .mcp-register-card button:hover {
+    background: linear-gradient(to right, #005bea, #00c6ff);
+  }
+  
+  /* Entry animation */
+  @keyframes slideUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  

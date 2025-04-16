@@ -1,0 +1,82 @@
+.mcp-login-container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .mcp-login-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    width: 360px;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .mcp-login-card h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .subtext {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #e0f7ff;
+  }
+  
+  .mcp-login-card input {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .mcp-login-card input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(79, 172, 254, 0.8);
+  }
+  
+  .mcp-login-card button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #007cf0;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .mcp-login-card button:hover {
+    background: #005fcc;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
