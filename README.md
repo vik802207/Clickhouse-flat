@@ -25,7 +25,7 @@ Manage your data workflows with JWT-secured APIs, beautiful UI, and easy import/
 ---
 
 ## 📁 Project Structure
-
+```bash
 clickhouse-csv-ingestion/
 ├── backend/
 │   ├── routes/
@@ -39,7 +39,7 @@ clickhouse-csv-ingestion/
 │   │   └── App.js
 ├── .env
 └── README.md
-
+```
 
 ## 🚀 Project Setup Instructions
 
@@ -47,23 +47,17 @@ clickhouse-csv-ingestion/
 git clone https://github.com/vik802207/Clickhouse-flat
 
 ## 🔧 Backend Setup
-
-#### Navigate to the backend directory
+```bash
 cd backend
-
-#### Start the backend server
 node index.js
+```
 
-#### 💻 Frontend Setup
-
-# Navigate to the frontend directory
+## 💻 Frontend Setup
+```bash
 cd Bidirectional ClickHouse
-
-#### Install dependencies
 npm install
-
-#### Start the frontend server
 npm start
+```
 
 ## 📤 API Endpoints
 
