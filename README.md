@@ -81,10 +81,6 @@ Check out the live demo of **ClickPorter** - ClickHouse ↔️ CSV Connector:
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-brightgreen)](https://clickhouse-flat.vercel.app/)
 
 
-> **Note**: This is a prototype demo. Features like login and file upload may be limited or disabled in the demo version. Feel free to explore the core functionalities and user interface.
-
----
-
 ### Demo Features:
 - **Export ClickHouse Data to CSV**: Try exporting data from ClickHouse to CSV.
 - **Import CSV to ClickHouse**: Import your CSV files into ClickHouse seamlessly.
