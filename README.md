@@ -40,6 +40,9 @@ clickhouse-csv-ingestion/
 ├── .env
 └── README.md
 ```
+## Screnshot
+
+![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(338).png?raw=true)
 
 ## 🚀 Project Setup Instructions
 
