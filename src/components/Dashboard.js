@@ -41,7 +41,7 @@ const Dashboard = () => {
       gap: "2rem",
     },
     roleCard: {
-      background: "rgba(255, 255, 255, 0.05)",
+      background: "#9ba5e2",
       padding: "1.5rem",
       borderRadius: "15px",
       boxShadow: "0 4px 20px rgba(0, 0, 0, 0.4)",
