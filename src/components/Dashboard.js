@@ -10,8 +10,7 @@ const Dashboard = () => {
       justifyContent: "center",
       alignItems: "center",
       minHeight: "100vh",
-      padding: "2rem",
-      background: "linear-gradient(135deg, #0f2027, #203a43, #2c5364)",
+      padding: "2rem"
     },
     homeCard: {
       background: "rgba(255, 255, 255, 0.08)",
