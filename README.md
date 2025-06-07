@@ -42,7 +42,14 @@ clickhouse-csv-ingestion/
 ```
 ## Screnshot
 
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(338).png?raw=true)
+![Alt text](https://github.com/vik802207/Clickhouse-flat/blob/main/img/Screenshot%20(426).png?raw=true)
+![Alt text](https://github.com/vik802207/Clickhouse-flat/blob/main/img/Screenshot%20(427).png?raw=true)
+![Alt text](https://github.com/vik802207/Clickhouse-flat/blob/main/img/Screenshot%20(428).png?raw=true)
+![Alt text](https://github.com/vik802207/Clickhouse-flat/blob/main/img/Screenshot%20(429).png?raw=true)
+![Alt text](https://github.com/vik802207/Clickhouse-flat/blob/main/img/Screenshot%20(430).png?raw=true)
+![Alt text](https://github.com/vik802207/Clickhouse-flat/blob/main/img/Screenshot%20(431).png?raw=true)
+![Alt text](https://github.com/vik802207/Clickhouse-flat/blob/main/img/Screenshot%20(432).png?raw=true)
+
 
 ## 🚀 Project Setup Instructions
 
